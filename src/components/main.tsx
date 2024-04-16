@@ -13,13 +13,13 @@ const Main = () => {
             <Form setAlturaCm={setAlturaCm} alturaCm={alturaCm} />
 
             <div className="flex flex-col items-center text-xl">
-                {alturaCm > 0 ? <>
-                    <p>{`Sua altura em centímetros é ${alturaCm}.`}</p>
-                    {/* <p>{`Sua altura em metros é ${alturaCm / 100}.`}</p>
-                    <p>{`Sua altura em quilometros é ${alturaCm / 100000}.`}</p>
-                    <p>{`Sua altura em pés é ${cmEmPes(alturaCm)}.`}</p>
-                    <p>{`Sua altura em polegadas é ${cmEmPolegadas(alturaCm)}.`}</p> */}
-                </> : <p>Ainda não foi inserido uma altura.</p>}
+                {alturaCm > 0 ? <ul>
+                    <li><p>{`Sua altura em centímetros é ${alturaCm}.`}</p></li>
+                    <li><p>{`Sua altura em metros é ${alturaCm / 100}.`}</p></li>
+                    <li><p>{`Sua altura em quilômetros é ${alturaCm / 100000}.`}</p></li>
+                    <li><p>{`Sua altura em pés é ${cmEmPes(alturaCm)}.`}</p></li>
+                    <li><p>{`Sua altura em polegadas é ${cmEmPolegadas(alturaCm)}.`}</p></li>
+                </ul> : <p>Ainda não foi inserido uma altura.</p>}
             </div>
         </main>
     );
