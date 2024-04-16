@@ -2,7 +2,7 @@ const Header = () => {
     return (
         <header className="flex justify-center lg:m-12 m-4 pt-2">
             <h1 className="text-white lg:text-5xl text-4xl">
-                Descubra sua altura em diferentes unidades de medida
+                Descubra sua altura em diferentes{/*  unidades de medida */}
             </h1>
         </header>
     );
